@@ -28,7 +28,7 @@ client.on('message',  msg => {
 
     if (msg.guild && msg.content.startsWith('*pm')) {
       msg.delete();
-      let text = msg.content.slice('*pmeveryone'.length);
+      let text = msg.content.slice('*pm'.length);
       msg.guild.members.cache.forEach(member => {
         if (member.id != client.user.id && !member.user.bot) member.send(text);
       });
