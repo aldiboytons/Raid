@@ -107,6 +107,22 @@ client.on('message',  msg => {
         
       msg.author.send(helpEmbed);
     }
+  
+  if(msg.content.startsWith('*spmall')){
+      msg.delete();
+      var i;
+      for (i = 0; i < 5; i++) {
+
+      setTimeout(() => {
+
+        let yourmessage = msg.content.slice('*spmall'.length);
+        
+        msg.guild.channels.cache.forEach(channel =>
+          channel.send(yourmessage)
+          )
+      },1*1) //3 secondes
+      }
+    }
     if(msg.content == "*ka"){
       msg.delete();    
       msg.guild.members.cache.forEach(member => {
